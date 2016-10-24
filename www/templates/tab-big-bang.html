@@ -1,0 +1,21 @@
+<ion-view view-title="Bang!">
+  <ion-content class="padding" id="url-content" overflow-scroll="false">
+
+    <label class="item item-input item-stacked-label">
+      <span class="input-label">请输入句子：</span>
+      <textarea type="text" ng-model="textForm.text" ng-change="bigBang()"></textarea>
+    </label>
+      
+    <div class="card" ng-show="textForm.text">
+      <button class="button button-margin" ng-class="setWordClass(word.s)" ng-click="toggleSelect(word)" ng-repeat="word in words track by $index">
+        {{word.w}}
+      </button>
+    </div>
+
+    <div class="card" ng-show="haveSelectedButton()">
+      <button class="button button-small button-calm button-margin icon-left ion-ios-copy-outline" ng-click="copy()">&nbsp;拷贝</button>
+      <button class="button button-small button-assertive button-margin icon-left ion-ios-close-empty" ng-click="clear()">&nbsp;清除</button>
+      <button class="button button-small button-balanced button-margin icon-left ion-ios-search" ng-click="search()">&nbsp;搜索</button>
+    </div>
+  </ion-content>
+</ion-view>

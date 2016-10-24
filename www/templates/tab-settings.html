@@ -1,0 +1,18 @@
+<ion-view view-title="设置">
+  <ion-content overflow-scroll="false">
+    <ion-list>
+      <div class="item item-divider">
+        拆分方式
+      </div>
+      <ion-radio ng-model="sepForm.sep" ng-value="1" ng-change="changeSep()">词</ion-radio>
+      <ion-radio ng-model="sepForm.sep" ng-value="2" ng-change="changeSep()">字</ion-radio>
+      <ion-radio ng-model="sepForm.sep" ng-value="3" ng-change="changeSep()">偏旁部首</ion-radio>
+    
+      <div class="item item-divider">
+        作者信息
+      </div>
+      <a class="item" style="color: #387ef5" ng-click="openZhihu()">Zack @ 知乎</a>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

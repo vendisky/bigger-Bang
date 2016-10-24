@@ -1,0 +1,25 @@
+/* Empty. Add your own CSS if you like */
+.button-margin {
+	margin: 8px;
+}
+
+.item-radio input:checked + .radio-content .item-content {
+	background: #d9d9d9;
+}
+.item-radio input:checked + .radio-content .radio-icon {
+	color: #387ef5;
+}
+
+/* .keyboard-open .tabs {
+	display: none;
+}
+.keyboard-open .has-tabs {
+	bottom: 0;
+} */
+
+.tabs-bg-stable > .tabs {
+	/* Same as .bar.bar-stable */
+	border-color: #b2b2b2;
+    background-color: #f8f8f8;
+    background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+}
